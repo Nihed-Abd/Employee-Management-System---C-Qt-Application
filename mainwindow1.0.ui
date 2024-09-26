@@ -1,0 +1,3578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="gridStackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>781</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background: rgb(0, 78, 135);
+
+background: rgb(0, 78, 135);
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true">
+/*background: rgb(0, 0, 127);*/
+
+background: rgb(0, 78, 135);</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>30</y>
+        <width>421</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+/* Style for a QGroupBox for login information */
+QGroupBox {
+    border: 2px solid rgb(0, 85, 0); /* Border with default color */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 10px; /* Top margin */
+    background-color: #ffffff
+; /* Background color */
+}
+
+/* Style for the title of the QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px; /* Offset the title to the left */
+    padding: 0 5px; /* Internal padding for the title */
+    font-size: 16px; /* Title font size */
+    color: #2c3e50; /* Title text color */
+
+}a
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>180</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 87 11pt &quot;Segoe UI Black&quot;;
+background:#ffffff;</string>
+       </property>
+       <property name="text">
+        <string>Mot de passe</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="login_error_3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>380</y>
+         <width>201</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: white;</string>
+       </property>
+       <property name="text">
+        <string>Vous n'avez pas du compte ? </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="password_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>230</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+	border:none;	
+	border-bottom: 3px solid rgb(16, 109, 12);
+	background-color:Transparent;
+	color: black;
+	padding: 5px 5px 5px 5px;
+}
+
+QLineEdit:Focus
+{
+	border: 2px solid rgb(16, 109, 12);
+}</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>                      Mdp</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="username_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>100</y>
+         <width>241</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+	border:none;	
+	border-bottom: 3px solid rgb(16, 109, 12);
+	background-color: #ffffff;
+	color: black;
+	padding: 5px 5px 5px 5px;
+}
+
+QLineEdit:Focus
+{
+	border: 2px solid rgb(16, 109, 12);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>                Nom utilisateur</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>300</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(28,133,255);
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Se connecter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>40</y>
+         <width>181</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #ffffff;
+font: 87 11pt &quot;Segoe UI Black&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Nom d'utilisateur</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>380</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(28,133,255);
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>S'inscrire</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>271</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/prefix1/ress/logo.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>761</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid transparent;</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>10</y>
+            <width>261</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/new/prefix1/ress/fichier.png);
+border: 1px solid white;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>120</y>
+            <width>151</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+font-weight: bold;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: white;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Reclamations</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid transparent;</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>10</y>
+            <width>261</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/new/prefix1/ress/employe-heureux.png);
+border: 1px solid white;
+
+QLabel: {
+border: 1px solid tranparent;}
+QLabel : hover {
+border: 5px solid white;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>120</y>
+            <width>201</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+font-weight: bold;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: white;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Gestion des employés</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid transparent;</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>271</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/new/prefix1/ress/contracter.png);
+border: 1px solid white;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>120</y>
+            <width>201</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+font-weight: bold;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: white;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Gestion des contrats</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid transparent;</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>271</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/new/prefix1/ress/se-deconnecter.png);
+border: 1px solid white;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>120</y>
+            <width>101</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+font-weight: bold;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: white;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Quitter</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid transparent;</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>10</y>
+            <width>261</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/new/prefix1/ress/partenaire.png);
+border: 1px solid white;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>120</y>
+            <width>201</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+font-weight: bold;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: white;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Gestion des partenaires</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid transparent;</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>10</y>
+            <width>271</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/new/prefix1/ress/client.png);
+border: 1px solid white;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>117</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+font-weight: bold;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: white;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Gestion des clients</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>171</width>
+        <height>416</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_22">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 20px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(0, 0, 127);;
+border-radius: 1px;
+
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+color: white;
+font: 87 7pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+font: 87 7pt &quot;Segoe UI Black&quot;;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Gestion d'Employé</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_24">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 20px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(0, 0, 127);;
+border-radius: 1px;
+
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+color: white;
+font: 87 7pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+font: 87 7pt &quot;Segoe UI Black&quot;;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Gestion des Clients</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_25">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 20px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(0, 0, 127);;
+border-radius: 1px;
+
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+color: white;
+font: 87 7pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+font: 87 7pt &quot;Segoe UI Black&quot;;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Les Partenaires</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_23">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 20px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(0, 0, 127);;
+border-radius: 1px;
+
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Contrats</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_15">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 20px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(0, 0, 127);;
+border-radius: 1px;
+
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Reclamations</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 20px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(0, 0, 127);;
+border-radius: 1px;
+
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Quitter</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>621</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid #C2C7CB;
+    position: absolute;
+    top: -0.5em;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 4px solid #C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    min-width: 15ex;
+    padding: 5px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+}
+
+QTabBar::tab:selected {
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_11">
+       <property name="styleSheet">
+        <string notr="true">background: url(:/img/img/test.jpg);</string>
+       </property>
+       <attribute name="title">
+        <string>Ajouter</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>581</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Style for a QGroupBox for login information */
+QGroupBox {
+    border: 2px solid #bdc3c7; /* Border with default color */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 10px; /* Top margin */
+    background-color: #ffffff;
+; /* Background color */
+}
+
+/* Style for the title of the QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px; /* Offset the title to the left */
+    padding: 0 5px; /* Internal padding for the title */
+    font-size: 16px; /* Title font size */
+    color: #2c3e50; /* Title text color */
+
+}a
+</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLabel" name="label_29">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nom :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_30">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>110</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ID :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_31">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>160</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Poste :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_32">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>210</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;</string>
+         </property>
+         <property name="text">
+          <string>email :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_33">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>260</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Salaire :</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_nom_3">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>51</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Nom</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_id_3">
+         <property name="geometry">
+          <rect>
+           <x>102</x>
+           <y>100</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>ID</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_poste">
+         <property name="geometry">
+          <rect>
+           <x>102</x>
+           <y>150</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>poste</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_mail">
+         <property name="geometry">
+          <rect>
+           <x>102</x>
+           <y>200</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>email</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_salaire">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>251</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Salaire : En DT</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_16">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>300</y>
+           <width>251</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>93</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(28,133,255);
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Valider</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_26">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>340</y>
+           <width>251</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>93</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(28,133,255);
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Annuler</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>Modifier</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_12">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>581</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Style for a QGroupBox for login information */
+QGroupBox {
+    border: 2px solid #bdc3c7; /* Border with default color */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 10px; /* Top margin */
+    background-color: #ffffff;
+; /* Background color */
+}
+
+/* Style for the title of the QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px; /* Offset the title to the left */
+    padding: 0 5px; /* Internal padding for the title */
+    font-size: 16px; /* Title font size */
+    color: #2c3e50; /* Title text color */
+
+}a
+</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;
+background-color: white;</string>
+         </property>
+         <property name="text">
+          <string>Nom :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>110</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;
+background-color: white;</string>
+         </property>
+         <property name="text">
+          <string>ID :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>160</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;
+background-color: white;</string>
+         </property>
+         <property name="text">
+          <string>Salaire :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_37">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>210</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;
+background-color:white;</string>
+         </property>
+         <property name="text">
+          <string>Date :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>260</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;
+background-color: white;</string>
+         </property>
+         <property name="text">
+          <string>Salaire :</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_nom_4">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>51</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Nom</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_id_4">
+         <property name="geometry">
+          <rect>
+           <x>102</x>
+           <y>100</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>ID</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_description_4">
+         <property name="geometry">
+          <rect>
+           <x>102</x>
+           <y>150</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Salaire : En DT</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_date_4">
+         <property name="geometry">
+          <rect>
+           <x>102</x>
+           <y>200</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Date</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_conformite_4">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>251</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Salaire : En DT</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_17">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>300</y>
+           <width>251</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>93</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(28,133,255);
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_27">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>340</y>
+           <width>251</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>93</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(28,133,255);
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Annuler</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>Afficher</string>
+       </attribute>
+       <widget class="QTableView" name="tab_normes_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>571</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_18">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>130</y>
+          <width>141</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0E33F2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}</string>
+        </property>
+        <property name="text">
+         <string>Exporter PDF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_19">
+        <property name="geometry">
+         <rect>
+          <x>900</x>
+          <y>90</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>93</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0E33F2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}</string>
+        </property>
+        <property name="text">
+         <string>Trier</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="logoutButton_3">
+        <property name="geometry">
+         <rect>
+          <x>1130</x>
+          <y>480</y>
+          <width>171</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0E33F2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}</string>
+        </property>
+        <property name="text">
+         <string>Se déconnecter</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>Supprimer</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_13">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>571</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Style for a QGroupBox for login information */
+QGroupBox {
+    border: 2px solid #bdc3c7; /* Border with default color */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 10px; /* Top margin */
+    background-color: #ffffff;
+; /* Background color */
+}
+
+/* Style for the title of the QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px; /* Offset the title to the left */
+    padding: 0 5px; /* Internal padding for the title */
+    font-size: 16px; /* Title font size */
+    color: #2c3e50; /* Title text color */
+
+}a
+</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLabel" name="label_39">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>130</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+font: 87 9pt &quot;Arial Black&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ID :</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_20">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>70</y>
+           <width>121</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>93</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0E33F2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #000000;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}</string>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_id_5">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>ID</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_28">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>210</y>
+           <width>251</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>93</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(28,133,255);
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_15">
+       <attribute name="title">
+        <string>Rechercher</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_14">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>581</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* Style for a QGroupBox for login information */
+QGroupBox {
+    border: 2px solid #bdc3c7; /* Border with default color */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 10px; /* Top margin */
+    background-color: #ffffff;
+; /* Background color */
+}
+
+/* Style for the title of the QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px; /* Offset the title to the left */
+    padding: 0 5px; /* Internal padding for the title */
+    font-size: 16px; /* Title font size */
+    color: #2c3e50; /* Title text color */
+
+}a
+</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLabel" name="label_40">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 9pt &quot;Arial Black&quot;;
+background-color: white;</string>
+         </property>
+         <property name="text">
+          <string>ID :</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tab_normes_rech_3">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>140</y>
+           <width>491</width>
+           <height>241</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_21">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>90</y>
+           <width>131</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>93</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0E33F2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: #FFFFFF;
+}</string>
+         </property>
+         <property name="text">
+          <string>Rechercher</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_29">
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>90</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>93</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: rgb(28,133,255);
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+font: 87 8.5pt &quot;Segoe UI Black&quot;;
+}
+
+QPushButton:hover{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #0B28C2;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+
+QPushButton:pressed{
+	padding: 0px 16px;
+
+
+width: 86px;
+height: 48px;
+left: 1996px;
+top: 64px;
+
+/* Blue/50 */
+background: #081E91;
+border-radius: 12px;
+
+
+/* Button */
+
+width: 54px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Base/100 */
+color: white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>Valider</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_id_6">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>90</y>
+           <width>281</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+
+position: absolute;
+width: 428px;
+height: 50px;
+left: 1122px;
+top: 327px;
+background-color: #ffffff;
+
+border: 2px solid #D9D9D9;
+border-radius: 6px;
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>ID</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>101</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/prefix1/ress/logo.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>803</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
