@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/clients.png</file>
+        <file>img/employes.png</file>
+        <file>img/espaces.png</file>
+        <file>img/events.png</file>
+        <file>img/materiels.png</file>
+        <file>img/reservations.png</file>
+        <file>img/return.png</file>
+        <file>img/down-arrow.ico</file>
+        <file>img/back_empty.png</file>
+        <file>img/background.png</file>
+        <file>img/download.jpg</file>
+        <file>img/416362684_1072327003911747_812320314637004758_n.png</file>
+    </qresource>
+</RCC>
